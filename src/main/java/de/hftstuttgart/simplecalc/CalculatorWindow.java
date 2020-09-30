@@ -5,14 +5,19 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 
 public class CalculatorWindow extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 2769958869273013000L;
 	private final Calculator calculator;
 	
 	public CalculatorWindow(Calculator calculator) {
 		super("Simple Calculator");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		
 		this.calculator = calculator;
 		
