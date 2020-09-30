@@ -31,8 +31,7 @@
 	  <dependency>
 			<groupId>com.jaliansystems</groupId>
 			<artifactId>marathon-java-driver</artifactId>
-			<version>4.11</version>
-			<scope>test</scope>
+			<version>5.4.0.0</version>
 		</dependency>
   </dependencies>
 
