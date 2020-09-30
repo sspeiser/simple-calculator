@@ -45,7 +45,7 @@ public class CalculatorAddTestIT {
 		pageCalc.setSecondNumber("19");
 		pageCalc.add();
 //		Then: The result field shows the sum of the numbers: 42
-		assertEquals(pageCalc.getResult(), "42");
+		assertEquals("42", pageCalc.getResult());
 	}
 	
 }

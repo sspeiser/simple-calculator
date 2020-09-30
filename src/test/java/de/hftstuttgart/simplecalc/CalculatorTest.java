@@ -9,7 +9,8 @@ public class CalculatorTest {
 	@Test
 	public void addingNumbers() {
 		Calculator calc = new Calculator();
-		assertEquals(calc.add(17, 3), 20);
+		assertEquals(20, calc.add(17, 3));
+		assertEquals(14, calc.add(17, -3));
 	}
 
 }
