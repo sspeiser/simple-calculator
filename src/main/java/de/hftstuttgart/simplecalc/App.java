@@ -1,9 +1,15 @@
 package de.hftstuttgart.simplecalc;
 
+import javax.swing.SwingUtilities;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+    	final Calculator calculator = new Calculator();
+		SwingUtilities.invokeLater(() -> {
+			CalculatorWindow calcWin = new CalculatorWindow(calculator);
+			calcWin.setVisible(true);
+		});
     }
 }
